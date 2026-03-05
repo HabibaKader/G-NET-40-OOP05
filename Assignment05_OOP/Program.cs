@@ -51,6 +51,18 @@
             // The risk of shallow copy with reference type fields is that modifying the copied object's internal data will also affect the original object
 
             #endregion
+
+            #region Part01:Question04
+
+            // a) The output will be:
+            // Dev - Testing
+            // QA - Testing
+
+            // ShallowCopy uses MemberwiseClone, which copies value-type fields directly and copies reference-type fields by reference.
+            // Title is a string whic is immutable reference type so changing e2.Title does not affect e1.Title
+            // Dept is a reference type, so both e1 and e2 point to the same Department object
+
+            #endregion
         }
     }
 }
