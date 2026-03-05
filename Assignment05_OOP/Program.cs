@@ -43,6 +43,14 @@
             // They are only accessible through the interface reference
 
             #endregion
+
+            #region Part01:Question03
+
+            // Shallow copy copies the object but keeps the same references inside it while deep copy creates new copies of all nested reference objects too
+            // Use shallow copy when the object contains only value types or when shared references are acceptable use deep copy when you need full independence
+            // The risk of shallow copy with reference type fields is that modifying the copied object's internal data will also affect the original object
+
+            #endregion
         }
     }
 }
