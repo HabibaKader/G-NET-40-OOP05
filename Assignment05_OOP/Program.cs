@@ -16,6 +16,33 @@
             // 2- Remove tight coupling between classes
             // 3- Enable multiple inheritance
             #endregion
+
+            #region Part01:Question02
+
+            // a) Both IEnglishSpeaker and IArabicSpeaker define a method with the same signature
+            // Since the Translator class implements both interfaces it provides only one public Greet() method
+            // both prints same output
+
+
+            // b) to handle it we use explicit interface implementation.
+
+            //class Translator : IEnglishSpeaker, IArabicSpeaker
+            //{
+            //void IEnglishSpeaker.Greet()
+            //{
+            //    Console.WriteLine("Hello");
+            //}
+
+            //void IArabicSpeaker.Greet()
+            //{
+            //    Console.WriteLine("Ahlan");
+            //}
+            //}
+
+            // c) No you cannot Because explicitly implemented methods are not public methods of the class itself
+            // They are only accessible through the interface reference
+
+            #endregion
         }
     }
 }
